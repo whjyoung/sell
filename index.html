@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>mobilesale</title>
+  <!-- 引入reset.css -->
+  <link rel="stylesheet" href="./static/css/reset.css">
+  <!-- 引入字体图标 ,在app.vue中导入-->
+  <!-- <link rel="stylesheet" href="./src/common/iconfont/iconfont.css"> -->
+  <!-- 解决移动端点击响应延时0.3s响应问题 -->
+  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js">
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body);
+      }, false);
+    }
+
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <!-- 一、 vue全家桶（数据处理/组件化）：vue,vue-router,vuex,mint-ui,vue-lazyload,滑动库：vue-scroller,better-scroll,swiper,
+  日期处理：moment,date-fns
+  前后台交互：mock数据：mockjs;接口测试：postman;ajax请求：vue-resource,axios(更倾向)
+  模块化：es6,babel
+  项目构建/工程化：webpack,vue-cli（脚手架）,eslint(检测js语法是否规范)
+  css预编译器：stylus
+
+  二、 项目目录：
+  一级路由：首页
+  搜索
+  订单
+  个人
+  登录
+  商家
+  二级路由：商家商品
+  商品评价
+  商品点餐
+
+  三、 API接口：组成部分：请求3个（url,方式，参数），响应1个（请求返回过来的数据）
+  四、项目vue组件
+  五、学会组件化、模块化、工程化的开发模式；
+  过渡效果
+  移动端1px效果
+
+  六、项目结构分析：
+  build:webpack相关的配置文件夹（基本不需要改）
+  config:webpack相关的配置文件夹（基本不需要改）-》index.js:指定的后台服务的端口号和静态资源文件夹
+  node_modules:当前所用到的相关依赖
+  src:源码文件夹
+  main.js:应用入口果
+  static:静态资源文件夹
+  .babelrc:babel的配置文件夹
+  .editorconfig:通过编辑器的编码/格式进行一定的配置
+  .eslintignore:eslint检查忽略的配置
+  .elinntrc.js:eslint检查的配置
+  .gitgnore:git版本管制忽略的配置
+  index.html:主页面文件
+  package.json:应用包配置文件
+  README.md:应用描述说明的readme文件
+
+  七、编码测试与打包发布项目
+  1）、编码测试：
+  npm run dev(npm start)
+  编码，自动编译打包，看效果
+  2)、打包发布
+  npm run build(本地打包，生成dist文件夹)
+  npm install -g serve
+  serve dist
+  八、资源准备
+  图片base64：样式中引用的小图片，在webpack打包会自动处理转换为样式内部的base64编码字符串
+  2x与3x图：
+  iconfont字体图标
+  九、目录设计
+  src:
+  api：与后台交互模块文件夹
+  common:通用资源文件夹，如fonts/img/stylus
+  components:非路由组件文件夹
+  filters:自定义过滤器模块文件夹
+  mock:模拟数据接口文件夹
+  pages:路由组件文件夹
+  router:路由器文件夹
+  store:vuex相关模块文件夹
+  App.vue:应用组件
+  main.js:入口js
+  十、当前主流的三种css预编译器：Less、Sass、Stylus
+  安装stylus依赖包：npm install stylus stylus-loader --save-dev(stylus:转换为css和stylus-loader:webpack编译stylus转换为css)
+  <!-- 编写样式：<style lang="stylus" rel="stylesheet/stylus></style> 
+  使用&指向父组件
+  用@imPort引入样式文件
+  十一、整体vue结构
+  components(非路由组件文件夹)-》FooterGuide->FooterGuide.vue:底部组件vue
+  pages(路由组件文件夹)-》Msite.vue:首页
+  Search.vue,搜索
+  Order.vue:订单
+  Profile.vue:个人
+  App.vue:根组件.vue
+  main.js:入口js -->
+
+</body>
+
+</html>
